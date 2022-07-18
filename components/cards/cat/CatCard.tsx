@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './CatCard.module.css';
 
 export interface ICatCard {
@@ -14,8 +13,8 @@ const CatCard: React.FC<ICatCard> = ({ tag, title, body, author, time }) => {
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles.card__header}>
-          <Image
-            src="/time-cat.jpg"
+          <img
+            src="/time-cat.jpeg"
             alt="card__image"
             className={styles.card__image}
             width="600"
@@ -29,7 +28,7 @@ const CatCard: React.FC<ICatCard> = ({ tag, title, body, author, time }) => {
         </div>
         <div className={styles.card__footer}>
           <div className={styles.user}>
-            <Image
+            <img
               src="https://i.pravatar.cc/40?img=3"
               alt="user__image"
               className={styles.user__image}
